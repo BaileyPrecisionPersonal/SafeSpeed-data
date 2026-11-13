@@ -1,0 +1,5 @@
+# Settings for the public web pages GitHub serves from this repository (GitHub Pages).
+# The privacy policy is PRIVACY.md here, shown as a web page at .../SafeSpeed-data/PRIVACY
+title: SafeSpeed UK
+description: Privacy policy and open data for the SafeSpeed UK app, by ProtoSoft
+theme: jekyll-theme-primer
