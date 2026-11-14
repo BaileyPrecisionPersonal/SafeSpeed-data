@@ -1,7 +1,7 @@
 {
     "format": "safespeed-zones",
     "version": 2,
-    "exportedAt": "2026-11-11T12:47:49Z",
+    "exportedAt": "2026-11-14T21:42:12Z",
     "license": "Zone and camera data © OpenStreetMap contributors, Open Database License (ODbL) v1.0: https://www.openstreetmap.org/copyright",
     "zones": [
         {
@@ -785,7 +785,7 @@
                 "lon": -0.91152805
             },
             "limit": 50,
-            "unit": "KPH",
+            "unit": "MPH",
             "bidirectional": true,
             "source": "OSM",
             "osmId": 16656936,
@@ -802,7 +802,7 @@
                 "lon": -0.911573
             },
             "limit": 50,
-            "unit": "KPH",
+            "unit": "MPH",
             "bidirectional": true,
             "source": "OSM",
             "osmId": 16656937,
@@ -819,7 +819,7 @@
                 "lon": -1.0097153
             },
             "limit": 50,
-            "unit": "KPH",
+            "unit": "MPH",
             "bidirectional": true,
             "source": "OSM",
             "osmId": 16656938,
@@ -836,7 +836,7 @@
                 "lon": -0.9907189
             },
             "limit": 50,
-            "unit": "KPH",
+            "unit": "MPH",
             "bidirectional": true,
             "source": "OSM",
             "osmId": 16656939,
@@ -3676,14 +3676,6 @@
             "osmId": 95129917
         },
         {
-            "lat": 50.2541259,
-            "lon": 1.6615677,
-            "limit": 80,
-            "unit": "KPH",
-            "source": "OSM",
-            "osmId": 97730811
-        },
-        {
             "lat": 51.5978257,
             "lon": -3.9949312,
             "limit": 30,
@@ -5075,14 +5067,6 @@
             "unit": "MPH",
             "source": "OSM",
             "osmId": 360845556
-        },
-        {
-            "lat": 49.9042732,
-            "lon": 1.112618,
-            "limit": 70,
-            "unit": "KPH",
-            "source": "OSM",
-            "osmId": 365600036
         },
         {
             "lat": 51.7628497,
@@ -6934,15 +6918,6 @@
             "osmId": 715567159
         },
         {
-            "lat": 50.8640861,
-            "lon": 1.7403799,
-            "limit": 130,
-            "unit": "KPH",
-            "direction": 42.4,
-            "source": "OSM",
-            "osmId": 719718295
-        },
-        {
             "lat": 52.4882386,
             "lon": -1.906036,
             "limit": 30,
@@ -7759,15 +7734,6 @@
             "osmId": 924378083
         },
         {
-            "lat": 49.9185843,
-            "lon": 1.1049656,
-            "limit": 90,
-            "unit": "KPH",
-            "direction": 228.6,
-            "source": "OSM",
-            "osmId": 934770689
-        },
-        {
             "lat": 52.2277535,
             "lon": 0.3239246,
             "limit": 70,
@@ -7775,32 +7741,6 @@
             "direction": 29.2,
             "source": "OSM",
             "osmId": 938855010
-        },
-        {
-            "lat": 50.3862738,
-            "lon": 1.8731395,
-            "limit": 110,
-            "unit": "KPH",
-            "direction": 274.7,
-            "source": "OSM",
-            "osmId": 939466830
-        },
-        {
-            "lat": 50.9345425,
-            "lon": 1.8818984,
-            "limit": 90,
-            "unit": "KPH",
-            "direction": 296.5,
-            "source": "OSM",
-            "osmId": 939727141
-        },
-        {
-            "lat": 50.5033474,
-            "lon": 1.7661339,
-            "limit": 80,
-            "unit": "KPH",
-            "source": "OSM",
-            "osmId": 939779732
         },
         {
             "lat": 53.4334878,
@@ -8911,30 +8851,6 @@
             "osmId": 1321754341
         },
         {
-            "lat": 50.075131,
-            "lon": 1.601246,
-            "limit": 80,
-            "unit": "KPH",
-            "source": "OSM",
-            "osmId": 1322250744
-        },
-        {
-            "lat": 50.0004014,
-            "lon": 1.5371556,
-            "limit": 80,
-            "unit": "KPH",
-            "source": "OSM",
-            "osmId": 1322285139
-        },
-        {
-            "lat": 50.1520442,
-            "lon": 1.8198018,
-            "limit": 70,
-            "unit": "KPH",
-            "source": "OSM",
-            "osmId": 1322321909
-        },
-        {
             "lat": 52.6165791,
             "lon": -0.0174707,
             "limit": 40,
@@ -9243,8 +9159,8 @@
         {
             "lat": 52.36346,
             "lon": -1.4225364,
-            "limit": 80,
-            "unit": "KPH",
+            "limit": 50,
+            "unit": "MPH",
             "direction": 284.0,
             "source": "OSM",
             "osmId": 1414957293
@@ -9293,32 +9209,6 @@
             "osmId": 1424447354
         },
         {
-            "lat": 50.7384439,
-            "lon": 1.8735448,
-            "limit": 90,
-            "unit": "KPH",
-            "direction": 156.6,
-            "source": "OSM",
-            "osmId": 1424553933
-        },
-        {
-            "lat": 50.73498,
-            "lon": 1.7085124,
-            "limit": 110,
-            "unit": "KPH",
-            "direction": 301.0,
-            "source": "OSM",
-            "osmId": 1424625678
-        },
-        {
-            "lat": 50.5508834,
-            "lon": 1.618134,
-            "limit": 80,
-            "unit": "KPH",
-            "source": "OSM",
-            "osmId": 1425300075
-        },
-        {
             "lat": 52.242234,
             "lon": 0.0545239,
             "limit": 70,
@@ -9353,15 +9243,6 @@
             "direction": 181.5,
             "source": "OSM",
             "osmId": 1430220625
-        },
-        {
-            "lat": 49.9891002,
-            "lon": 1.6873102,
-            "limit": 130,
-            "unit": "KPH",
-            "direction": 20.1,
-            "source": "OSM",
-            "osmId": 1430569694
         },
         {
             "lat": 50.9156326,
@@ -9733,7 +9614,7 @@
             "lat": 51.7853459,
             "lon": 0.0476774,
             "limit": 50,
-            "unit": "KPH",
+            "unit": "MPH",
             "direction": 273.7,
             "source": "OSM",
             "osmId": 1550349756
@@ -9742,7 +9623,7 @@
             "lat": 51.7855121,
             "lon": 0.0471193,
             "limit": 50,
-            "unit": "KPH",
+            "unit": "MPH",
             "direction": 88.1,
             "source": "OSM",
             "osmId": 1550349916
@@ -10403,7 +10284,7 @@
             "lat": 52.5295042,
             "lon": -2.0175663,
             "limit": 40,
-            "unit": "KPH",
+            "unit": "MPH",
             "direction": 127.0,
             "source": "OSM",
             "osmId": 1652532530
@@ -10713,23 +10594,6 @@
             "unit": "MPH",
             "source": "OSM",
             "osmId": 1747699354
-        },
-        {
-            "lat": 50.1569901,
-            "lon": 1.7392152,
-            "limit": 80,
-            "unit": "KPH",
-            "source": "OSM",
-            "osmId": 1757399754
-        },
-        {
-            "lat": 50.1220412,
-            "lon": 1.7959121,
-            "limit": 110,
-            "unit": "KPH",
-            "direction": 191.5,
-            "source": "OSM",
-            "osmId": 1757438681
         },
         {
             "lat": 51.7440231,
@@ -12863,14 +12727,6 @@
             "osmId": 2599925648
         },
         {
-            "lat": 50.3211288,
-            "lon": 1.7503024,
-            "limit": 80,
-            "unit": "KPH",
-            "source": "OSM",
-            "osmId": 2603021781
-        },
-        {
             "lat": 51.7621938,
             "lon": -1.3542727,
             "limit": 30,
@@ -12898,7 +12754,7 @@
             "lat": 52.1520622,
             "lon": 1.0859886,
             "limit": 50,
-            "unit": "KPH",
+            "unit": "MPH",
             "direction": 200.5,
             "source": "OSM",
             "osmId": 2622731016
@@ -13344,15 +13200,6 @@
             "unit": "MPH",
             "source": "OSM",
             "osmId": 3066941647
-        },
-        {
-            "lat": 50.8502932,
-            "lon": 1.7234493,
-            "limit": 130,
-            "unit": "KPH",
-            "direction": 220.9,
-            "source": "OSM",
-            "osmId": 3073376805
         },
         {
             "lat": 51.6461372,
@@ -14823,23 +14670,6 @@
             "unit": "MPH",
             "source": "OSM",
             "osmId": 3886419757
-        },
-        {
-            "lat": 49.9053725,
-            "lon": 1.0766761,
-            "limit": 50,
-            "unit": "KPH",
-            "direction": 172.0,
-            "source": "OSM",
-            "osmId": 3912148548
-        },
-        {
-            "lat": 49.9138944,
-            "lon": 1.0748739,
-            "limit": 50,
-            "unit": "KPH",
-            "source": "OSM",
-            "osmId": 3912149408
         },
         {
             "lat": 51.4539163,
@@ -18574,22 +18404,6 @@
             "osmId": 7192686157
         },
         {
-            "lat": 50.6988916,
-            "lon": 1.7113017,
-            "limit": 80,
-            "unit": "KPH",
-            "source": "OSM",
-            "osmId": 7193695893
-        },
-        {
-            "lat": 50.6824406,
-            "lon": 1.7549854,
-            "limit": 80,
-            "unit": "KPH",
-            "source": "OSM",
-            "osmId": 7193695895
-        },
-        {
             "lat": 50.8455382,
             "lon": 0.4688169,
             "limit": 30,
@@ -20198,7 +20012,7 @@
             "lat": 53.4946368,
             "lon": -1.6460998,
             "limit": 40,
-            "unit": "KPH",
+            "unit": "MPH",
             "source": "OSM",
             "osmId": 8820566340
         },
@@ -20206,7 +20020,7 @@
             "lat": 53.4943442,
             "lon": -1.6442907,
             "limit": 40,
-            "unit": "KPH",
+            "unit": "MPH",
             "source": "OSM",
             "osmId": 8820566341
         },
@@ -20268,14 +20082,6 @@
             "unit": "MPH",
             "source": "OSM",
             "osmId": 8855203495
-        },
-        {
-            "lat": 49.9817886,
-            "lon": 1.5995289,
-            "limit": 80,
-            "unit": "KPH",
-            "source": "OSM",
-            "osmId": 8858920461
         },
         {
             "lat": 51.0578847,
@@ -20425,14 +20231,6 @@
             "osmId": 8908473882
         },
         {
-            "lat": 49.9046471,
-            "lon": 1.092855,
-            "limit": 30,
-            "unit": "KPH",
-            "source": "OSM",
-            "osmId": 8935462616
-        },
-        {
             "lat": 53.3928135,
             "lon": -1.4827292,
             "limit": 30,
@@ -20465,15 +20263,6 @@
             "direction": 326.9,
             "source": "OSM",
             "osmId": 8948670769
-        },
-        {
-            "lat": 50.7025903,
-            "lon": 1.622785,
-            "limit": 70,
-            "unit": "KPH",
-            "direction": 259.1,
-            "source": "OSM",
-            "osmId": 8967635932
         },
         {
             "lat": 50.8241586,
@@ -26543,15 +26332,6 @@
             "osmId": 11922523454
         },
         {
-            "lat": 49.9848465,
-            "lon": 1.6835817,
-            "limit": 130,
-            "unit": "KPH",
-            "direction": 34.5,
-            "source": "OSM",
-            "osmId": 11945973317
-        },
-        {
             "lat": 51.685319,
             "lon": 0.0547492,
             "limit": 70,
@@ -26655,14 +26435,6 @@
             "unit": "MPH",
             "source": "OSM",
             "osmId": 11982686474
-        },
-        {
-            "lat": 50.0943142,
-            "lon": 1.8626295,
-            "limit": 80,
-            "unit": "KPH",
-            "source": "OSM",
-            "osmId": 12006665488
         },
         {
             "lat": 52.1534894,
@@ -27228,15 +27000,6 @@
             "unit": "MPH",
             "source": "OSM",
             "osmId": 12303125233
-        },
-        {
-            "lat": 50.7364254,
-            "lon": 1.6865364,
-            "limit": 110,
-            "unit": "KPH",
-            "direction": 271.3,
-            "source": "OSM",
-            "osmId": 12342308622
         },
         {
             "lat": 52.1733017,
@@ -27960,14 +27723,6 @@
             "osmId": 12864348143
         },
         {
-            "lat": 54.9877498,
-            "lon": -7.5529055,
-            "limit": 100,
-            "unit": "KPH",
-            "source": "OSM",
-            "osmId": 12875237542
-        },
-        {
             "lat": 50.3972362,
             "lon": -4.1416174,
             "limit": 30,
@@ -28469,7 +28224,7 @@
             "lat": 53.6443888,
             "lon": -1.7746352,
             "limit": 30,
-            "unit": "KPH",
+            "unit": "MPH",
             "direction": 125.4,
             "source": "OSM",
             "osmId": 13359467403
@@ -29091,7 +28846,7 @@
             "lat": 53.7487969,
             "lon": -2.4661195,
             "limit": 30,
-            "unit": "KPH",
+            "unit": "MPH",
             "source": "OSM",
             "osmId": 14075014200
         },

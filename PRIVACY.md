@@ -10,7 +10,8 @@ Contact: protosoftuk+privacy@gmail.com
 
 - SafeSpeed UK has no accounts, no adverts and no analytics. ProtoSoft does not track you.
 - Your zones, settings and drive history stay on your phone.
-- To show the speed limit of the road you're on, the app sends your location to public OpenStreetMap servers. You can turn this off.
+- While you drive, the app doesn't send your location anywhere, unless you open the Map. The roads' speed limits are built into the app.
+- The Map, and working out the road between a zone's cameras, fetch data from free public servers for the area involved.
 - ProtoSoft only receives information from you if you choose to email us a crash report or a camera report.
 
 ## Your location
@@ -21,17 +22,16 @@ Your location leaves your phone in these cases:
 
 | When | What is sent | Where it goes |
 |---|---|---|
-| **Road speed limits** is on (Settings › Road speed limits; on by default) | Your position, about once every kilometre while you're tracking a drive | Public OpenStreetMap lookup servers ("Overpass"): overpass-api.de, overpass.private.coffee or overpass.kumi.systems |
-| You mark a camera while driving, or place a camera or zone on the map | The position of that camera or point | The same lookup servers |
 | You open the Map, or play a drive back on the map | Which area of the map you're looking at, which is around you when the map is following you, and around the drive when you play one back | The map server, tiles.openfreemap.org |
-| You download zones (Get UK zones, or Get OSM zones here) | The area you asked for | The same lookup servers |
-| You add, move or download a zone | The positions of that zone's two cameras, so the road between them can be worked out | Public OpenStreetMap routing servers: routing.openstreetmap.de or router.project-osrm.org |
+| You add or move a zone | The positions of that zone's two cameras, so the road between them can be worked out. If that doesn't work first time (with no signal, for example), the app tries again later, and each time it starts, until it has the road | Public routing servers: routing.openstreetmap.de or router.project-osrm.org |
+
+The app also asks those routing servers for the road between the cameras of the few built-in zones that come without it, each time it starts until it has it. That sends only those zones' camera positions, which are part of the app's own data, not where you are.
 
 These requests are sent over an encrypted connection. They don't contain your name, an account or any identifier made by the app. Like any internet request, they do reach the server from your phone's internet (IP) address.
 
-These servers are run by organisations and volunteers in the OpenStreetMap community, not by ProtoSoft. ProtoSoft never receives your location and has no copy of it, unless you email us a camera report (see below). We can't say what each server keeps in its own logs; that is covered by each operator's own policy. The servers may be outside the UK.
+The map server is run by OpenFreeMap, and the routing servers by FOSSGIS and the OSRM project. They are free public services built on OpenStreetMap data, not run by ProtoSoft. ProtoSoft never receives your location and has no copy of it, unless you email us a camera report (see below). We can't say what each server keeps in its own logs; that is covered by each operator's own policy. The servers may be outside the UK.
 
-**How to turn it off:** switch off **Settings › Road speed limits** to stop the regular position lookups. Zone timing and camera alerts carry on working, because they use the zones and cameras already stored on your phone.
+**While you drive, your location isn't sent anywhere**, unless you open the Map (above). Zone timing, camera alerts and the speed limit of the road you're on all work from data stored on your phone: the zones and cameras, and the UK's roads and their speed limits, which are built into the app. So does finding the road's name when you mark a camera or place one on the map. Only the Map and working out the road between a zone's cameras go online, as above.
 
 When your phone is connected to Android Auto, the app can also read the car's own GPS position and wheel speed. These are used on your phone in the same way as the phone's GPS and are not sent anywhere else.
 

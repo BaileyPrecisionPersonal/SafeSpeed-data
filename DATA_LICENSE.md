@@ -1,14 +1,18 @@
 # Data licence
 
-## Bundled zones and cameras
+## Zones and cameras from OpenStreetMap
 
-`uk_zones_seed.json` (inside the app at `app/src/main/assets/`, and published at <https://github.com/BaileyPrecisionPersonal/SafeSpeed-data>) holds the average speed zones and fixed speed cameras that ship with SafeSpeed UK. It is a database derived from [OpenStreetMap](https://www.openstreetmap.org) and is **© OpenStreetMap contributors**.
+Two files:
+- `uk_zones_seed.json` is the full copy of the UK's zones and cameras in OpenStreetMap. It's published at <https://github.com/BaileyPrecisionPersonal/SafeSpeed-data> and isn't in the app.
+- `extras_db.json`, the Extras DB, is taken from it and built into the app, encrypted. It holds the zones and cameras that the app's own camera database (below) hasn't got, and only ever grows: each update adds what's new in OpenStreetMap and changes nothing already there. It isn't published.
 
-OpenStreetMap data is published under the [Open Database License (ODbL) v1.0](https://opendatacommons.org/licenses/odbl/1-0/). Because this file is a derived database, it is made available under the same licence: you are free to copy, distribute, transform and build upon it, as long as you attribute OpenStreetMap, keep the result open under the ODbL, and keep it free of technical restrictions. The full terms are in the licence linked above; a plain-language summary is at <https://www.openstreetmap.org/copyright>.
+Both are databases derived from [OpenStreetMap](https://www.openstreetmap.org) and are **© OpenStreetMap contributors**. The Extras DB is a separate file: nothing in it is put into the private camera database below.
 
-The file is in SafeSpeed's backup format (`format: safespeed-zones`), described in the README under "The zone database". Each zone is one camera-to-camera section with its OpenStreetMap relation id (`osmId`) and section number (`osmPart`); each camera carries its OpenStreetMap node id. The `roadPath` of a zone is the road between its cameras, routed on OpenStreetMap data by the public OSRM servers (FOSSGIS, and the OSRM project's demo server), and is likewise derived from OpenStreetMap.
+OpenStreetMap data is published under the [Open Database License (ODbL) v1.0](https://opendatacommons.org/licenses/odbl/1-0/). Because these files are derived databases, they are made available under the same licence: you are free to copy, distribute, transform and build upon them, as long as you attribute OpenStreetMap, keep the result open under the ODbL, and keep it free of technical restrictions. The full terms are in the licence linked above; a plain-language summary is at <https://www.openstreetmap.org/copyright>.
 
-How it was made: `UkZonesSeedGenerator` (see the README, "Building") downloads `type=enforcement` + `enforcement=average_speed` relations and `highway=speed_camera` nodes for the UK from the Overpass API and writes this file.
+Both files are in SafeSpeed's backup format (`format: safespeed-zones`), described in the README under "The zone database". Each zone is one camera-to-camera section with its OpenStreetMap relation id (`osmId`) and section number (`osmPart`); each camera carries its OpenStreetMap node id. The `roadPath` of a zone is the road between its cameras, routed on OpenStreetMap data by the public OSRM servers (FOSSGIS, and the OSRM project's demo server), and is likewise derived from OpenStreetMap.
+
+How it was made: `UkZonesSeedGenerator` (see the README, "Building") downloads `type=enforcement` + `enforcement=average_speed` relations and `highway=speed_camera` nodes for the UK from the Overpass API and writes the full copy. The download areas also take in a few cameras across the Channel and the Irish border; those are left out, so it holds the UK's zones and cameras only, and their limits are put in mph, as under "Built-in road speed limits" below. The Extras DB is then taken from it: the zones and cameras the camera database below doesn't have, as the app decides (`CameraDbCoverage`).
 
 ## Bundled camera database (private)
 
@@ -16,7 +20,19 @@ How it was made: `UkZonesSeedGenerator` (see the README, "Building") downloads `
 
 Some of what the file says about each zone was looked up in OpenStreetMap when it was converted: the zone's name (the road at its first camera), whether that road is a one-way carriageway, and the `roadPath` between its cameras, routed on OpenStreetMap data by the public OSRM servers. Where the database has no speed limit for a camera or zone that OpenStreetMap also has, the file takes OpenStreetMap's limit. Those parts are © OpenStreetMap contributors. The file is used privately and is never made available to the public, so no public use of a derivative database under the ODbL takes place.
 
-The database is the app's main source of cameras and zones. Where it has a camera or zone that OpenStreetMap also has, the app leaves the OpenStreetMap one out; OpenStreetMap fills in the cameras and zones the database doesn't have.
+The database is the app's main source of cameras and zones. The Extras DB, a separate file, fills in the cameras and zones from OpenStreetMap that it doesn't have.
+
+## Built-in road speed limits
+
+`uk_roads.rdb` (built into the app) holds every road in the UK a car drives along, with its speed limit, number, name and one-way direction, so the app can show the limit of the road you're on without going online. It is a database derived from OpenStreetMap and is **© OpenStreetMap contributors**, under the ODbL.
+
+How it was made: `UkRoadsGenerator` reads Geofabrik's extract of the UK (`united-kingdom-latest.osm.pbf`, from <https://download.geofabrik.de/europe/united-kingdom.html>):
+- It keeps the ways tagged `highway` = motorway, trunk, primary, secondary, tertiary, unclassified, residential or living_street, and the `_link` roads of the first five.
+- On the island of Ireland it keeps only those inside OpenStreetMap's boundary of Northern Ireland.
+- It reads each road's limit from its `maxspeed` tags, and puts every limit in mph, as UK limits are signed: a number given in km/h that is a UK limit becomes that many mph, and any other km/h limit the nearest UK limit. The README, "The road speed limits file", has the details.
+- It joins pieces of road that carry on into one another with the same type, number, name, limit and direction, and simplifies each line to within 3 m.
+
+Nothing else is added to it.
 
 ## Backups made by the app
 
@@ -24,6 +40,6 @@ A backup file made with **Zones › ⋮ › Back up** contains the zones and cam
 
 ## Other data shown in the app
 
-- Road speed limits and road names shown while driving are fetched live from OpenStreetMap via the Overpass API: © OpenStreetMap contributors, ODbL.
+- Road speed limits and road names shown while driving come from the built-in road file above: © OpenStreetMap contributors, ODbL.
 - Map tiles are served by [OpenFreeMap](https://openfreemap.org) from OpenStreetMap data.
 - Speed-limit signs drawn in the app follow the designs in the UK Traffic Signs Regulations, which are Crown copyright and available under the [Open Government Licence v3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/).
