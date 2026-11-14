@@ -11,7 +11,7 @@ Contact: protosoftuk+privacy@gmail.com
 - SafeSpeed UK has no accounts, no adverts and no analytics. ProtoSoft does not track you.
 - Your zones, settings and drive history stay on your phone.
 - To show the speed limit of the road you're on, the app sends your location to public OpenStreetMap servers. You can turn this off.
-- ProtoSoft only receives information from you if you choose to email us a crash report.
+- ProtoSoft only receives information from you if you choose to email us a crash report or a camera report.
 
 ## Your location
 
@@ -29,7 +29,7 @@ Your location leaves your phone in these cases:
 
 These requests are sent over an encrypted connection. They don't contain your name, an account or any identifier made by the app. Like any internet request, they do reach the server from your phone's internet (IP) address.
 
-These servers are run by organisations and volunteers in the OpenStreetMap community, not by ProtoSoft. ProtoSoft never receives your location and has no copy of it. We can't say what each server keeps in its own logs; that is covered by each operator's own policy. The servers may be outside the UK.
+These servers are run by organisations and volunteers in the OpenStreetMap community, not by ProtoSoft. ProtoSoft never receives your location and has no copy of it, unless you email us a camera report (see below). We can't say what each server keeps in its own logs; that is covered by each operator's own policy. The servers may be outside the UK.
 
 **How to turn it off:** switch off **Settings › Road speed limits** to stop the regular position lookups. Zone timing and camera alerts carry on working, because they use the zones and cameras already stored on your phone.
 
@@ -42,6 +42,7 @@ When your phone is connected to Android Auto, the app can also read the car's ow
 - Your drive history (the zones you drove through, when, and your average speed), and for each of those drives the route you took through the zone and your speed along it, so that you can play the drive back on the map. Deleting a drive from the history, or clearing the history, deletes its route too
 - Limits you set for today
 - The crash log (see below)
+- Camera problems you note with **Report** (see below), until you delete them
 - If you turn on the developer option **Camera check** (Settings › Developer; off by default): the time, your position, the GPS accuracy, your speed and your direction of travel at each moment you tap to confirm a camera. They are kept until you clear them there
 
 ProtoSoft can't see any of this.
@@ -57,6 +58,14 @@ If SafeSpeed UK stops unexpectedly, it saves a report on your phone (Settings �
 Reports stay on your phone and the app never sends them itself. If you choose **Send to developer**, your own email app opens with the report in a message addressed to ProtoSoft, and it is only sent if you press Send. If you send it, we receive the report, your email address and anything you add to the message. We use these only to find and fix the problem and to reply to you if needed. We delete them once the problem is dealt with, and within 12 months at most.
 
 You can delete the saved reports at any time with **Delete all** on the Crash log screen.
+
+## Camera reports
+
+If a camera isn't where the app says, isn't there, or is missing, you can tap **Report** while driving (or **Report a camera problem** on Android Auto). The app then notes the time, your position, the GPS accuracy, your speed and your direction of travel at that moment, and the camera nearest you. You can also report a camera from the Map. Once the drive has finished, the app asks you what was wrong.
+
+Camera reports stay on your phone and the app never sends them itself. If you choose **Send**, your own email app opens with the report in a message addressed to ProtoSoft, and it is only sent if you press Send. If you send it, we receive what is in the report (the camera, what you said was wrong and, for a problem noted on a drive, where you were, your speed and direction, and the time), your email address, and anything you add to the message. We use these only to correct the app's camera data and to reply to you if needed. We delete them once the camera has been dealt with, and within 12 months at most.
+
+You can delete a saved report at any time: open it and choose **Delete** (Settings › Camera reports lists them all).
 
 ## Buying the app
 
@@ -82,7 +91,7 @@ SafeSpeed UK is for drivers. It is not aimed at children.
 
 ## Your rights
 
-Under UK data protection law you can ask for a copy of the personal information we hold about you, ask us to correct or delete it, and object to how we use it. In practice the only personal information ProtoSoft holds is any crash report email you have sent us and the order records Google Play gives us. To make a request, email protosoftuk+privacy@gmail.com.
+Under UK data protection law you can ask for a copy of the personal information we hold about you, ask us to correct or delete it, and object to how we use it. In practice the only personal information ProtoSoft holds is any crash report or camera report email you have sent us and the order records Google Play gives us. To make a request, email protosoftuk+privacy@gmail.com.
 
 If you're unhappy with how we've handled your information, you can complain to the Information Commissioner's Office (ico.org.uk).
 

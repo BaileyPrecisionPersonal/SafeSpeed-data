@@ -14,9 +14,9 @@ How it was made: `UkZonesSeedGenerator` (see the README, "Building") downloads `
 
 `uk_camera_db_seed.json` (kept at `app/private-data/` in the app repository, and built into the app encrypted) holds the UK fixed speed cameras and average speed zones converted from the app author's own camera database. It is **not** derived from OpenStreetMap and is **not** published: it is private data for this app's own use, not covered by the ODbL and not for redistribution. The app repository that holds it is private, the public SafeSpeed-data repository never receives it (`tools/publish-data.ps1` refuses to copy it), and backups made by the app leave its zones and cameras out.
 
-Some of what the file says about each zone was looked up in OpenStreetMap when it was converted: the zone's name (the road at its first camera), whether that road is a one-way carriageway, and the `roadPath` between its cameras, routed on OpenStreetMap data by the public OSRM servers. Those parts are © OpenStreetMap contributors. The file is used privately and is never made available to the public, so no public use of a derivative database under the ODbL takes place.
+Some of what the file says about each zone was looked up in OpenStreetMap when it was converted: the zone's name (the road at its first camera), whether that road is a one-way carriageway, and the `roadPath` between its cameras, routed on OpenStreetMap data by the public OSRM servers. Where the database has no speed limit for a camera or zone that OpenStreetMap also has, the file takes OpenStreetMap's limit. Those parts are © OpenStreetMap contributors. The file is used privately and is never made available to the public, so no public use of a derivative database under the ODbL takes place.
 
-Where the database lists a camera or zone OpenStreetMap already has, the record is kept in the file marked `unused` (with the reason) and the OpenStreetMap one is used in the app.
+The database is the app's main source of cameras and zones. Where it has a camera or zone that OpenStreetMap also has, the app leaves the OpenStreetMap one out; OpenStreetMap fills in the cameras and zones the database doesn't have.
 
 ## Backups made by the app
 
