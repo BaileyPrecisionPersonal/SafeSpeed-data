@@ -2,7 +2,7 @@
 
 **ProtoSoft** makes the SafeSpeed UK app for Android. This policy explains what information the app uses, what leaves your phone, and who receives it.
 
-Last updated: 13 November 2026
+Last updated: 14 November 2026
 
 Contact: protosoftuk+privacy@gmail.com
 
@@ -23,7 +23,7 @@ Your location leaves your phone in these cases:
 |---|---|---|
 | **Road speed limits** is on (Settings › Road speed limits; on by default) | Your position, about once every kilometre while you're tracking a drive | Public OpenStreetMap lookup servers ("Overpass"): overpass-api.de, overpass.private.coffee or overpass.kumi.systems |
 | You mark a camera while driving, or place a camera or zone on the map | The position of that camera or point | The same lookup servers |
-| You open the Map | Which area of the map you're looking at, which is around you when the map is following you | The map server, tiles.openfreemap.org |
+| You open the Map, or play a drive back on the map | Which area of the map you're looking at, which is around you when the map is following you, and around the drive when you play one back | The map server, tiles.openfreemap.org |
 | You download zones (Get UK zones, or Get OSM zones here) | The area you asked for | The same lookup servers |
 | You add, move or download a zone | The positions of that zone's two cameras, so the road between them can be worked out | Public OpenStreetMap routing servers: routing.openstreetmap.de or router.project-osrm.org |
 
@@ -39,13 +39,14 @@ When your phone is connected to Android Auto, the app can also read the car's ow
 
 - Your zones and cameras, including ones you add or edit
 - Your settings
-- Your drive history (the zones you drove through, when, and your average speed)
+- Your drive history (the zones you drove through, when, and your average speed), and for each of those drives the route you took through the zone and your speed along it, so that you can play the drive back on the map. Deleting a drive from the history, or clearing the history, deletes its route too
 - Limits you set for today
 - The crash log (see below)
+- If you turn on the developer option **Camera check** (Settings › Developer; off by default): the time, your position, the GPS accuracy, your speed and your direction of travel at each moment you tap to confirm a camera. They are kept until you clear them there
 
 ProtoSoft can't see any of this.
 
-**Backup files.** Zones › ⋮ › Back up saves your zones, settings and drive history to a file in a place you choose. What happens to that file afterwards is up to you.
+**Backup files.** Zones › ⋮ › Back up saves your zones, settings and drive history to a file in a place you choose (the routes of your drives aren't included). Drive history › Select › Export to a file saves the drives you pick as a spreadsheet file, also in a place you choose. Settings › Developer › Save to a file saves the cameras you confirmed with Camera check, again in a place you choose. What happens to those files afterwards is up to you.
 
 **Android's own backup.** If you have Google backup turned on for your phone, Android may include SafeSpeed UK's data in your phone's backup, in your own Google account. That is controlled in your phone's settings and handled by Google, not by ProtoSoft.
 

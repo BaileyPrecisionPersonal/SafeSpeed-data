@@ -1,7 +1,8 @@
 {
     "format": "safespeed-zones",
-    "version": 1,
+    "version": 2,
     "exportedAt": "2026-11-11T12:47:49Z",
+    "license": "Zone and camera data © OpenStreetMap contributors, Open Database License (ODbL) v1.0: https://www.openstreetmap.org/copyright",
     "zones": [
         {
             "name": "London Road SPECS (southbound)",
@@ -1777,7 +1778,7 @@
             "bidirectional": true,
             "source": "OSM",
             "osmId": 18807755,
-            "roadPath": ""
+            "roadPath": "amnjcBaxxgB_cAjy@ge@nn@eM~V"
         },
         {
             "name": "A47 Acle New Road (2/16)",
