@@ -25,7 +25,7 @@ Your location leaves your phone in these cases:
 | You open the Map, or play a drive back on the map | Which area of the map you're looking at, which is around you when the map is following you, and around the drive when you play one back | The map server, tiles.openfreemap.org |
 | You add or move a zone | The positions of that zone's two cameras, so the road between them can be worked out. If that doesn't work first time (with no signal, for example), the app tries again later, and each time it starts, until it has the road | Public routing servers: routing.openstreetmap.de or router.project-osrm.org |
 
-The app also asks those routing servers for the road between the cameras of the few built-in zones that come without it, each time it starts until it has it. That sends only those zones' camera positions, which are part of the app's own data, not where you are.
+The app also asks those routing servers for the road between the cameras of the few built-in OpenStreetMap zones that come without it, each time it starts until it has it. That sends only those zones' camera positions, which are public OpenStreetMap data, not where you are. Zones from the app's own camera database are never sent, unless you move one (above).
 
 These requests are sent over an encrypted connection. They don't contain your name, an account or any identifier made by the app. Like any internet request, they do reach the server from your phone's internet (IP) address.
 
